@@ -21,7 +21,7 @@ public interface ResourceRepository extends JpaRepository<Resource, Long> {
 
 
     List<Resource> findByCategory(ResourceCategory category);
-    // SELECT * FROM resources WHERE category = ?
+    // SELECT * FROM resources WHERE category =?
 
     List<Resource> findByNameContainingIgnoreCase(String name);
     // SELECT * FROM resources WHERE LOWER(name) LIKE LOWER('%?%')
